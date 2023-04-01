@@ -3,10 +3,10 @@
 Introduction to configure microservices for your spring boot projects.
 
 Outline:
-1. [Configuring kafka in local machine (Windows only)](https://github.com/pratamafarhan10/java-apache_kafka#configuring-kafka-in-local-machine)
-2. [Prepare your spring boot projects](https://github.com/pratamafarhan10/java-apache_kafka#prepare-your-spring-boot-projects)
-2. [Configure producer service](https://github.com/pratamafarhan10/java-apache_kafka#configure-producer-service)
-3. [Configure consumer service](https://github.com/pratamafarhan10/java-apache_kafka#configure-consumer-service)
+1. [Configuring kafka in local machine (Windows only)](#configuring-kafka-in-local-machine)
+2. [Prepare your spring boot projects](#prepare-your-spring-boot-projects)
+2. [Configure producer service](#configure-producer-service)
+3. [Configure consumer service](#configure-consumer-service)
 
 ## Configuring kafka in local machine
 
