@@ -19,6 +19,11 @@ Outline:
 Create 2 spring boot project and make sure you install these libraries:
 - Spring for Apache Kafka
 - Jackson-core
+
+After that don't forget to set the Kafka bootstrap server url in our both project application.properties
+```
+spring.kafka.bootstrap-server={your Kafka bootstrap server}
+```
  
 ## Configure producer service
 
