@@ -80,13 +80,17 @@ Next we create a controller class that will receive a request. Notice that we ha
 public class ProductController {
     @Autowired
     private KafkaTemplate<String, String> kafkaTemplate;
+    
+    @Autowired
+    private KafkaTopicConfig kafkaTopicConfig;
+
 
     @PostMapping("/create")
     public boolean createProduct(@RequestBody ProductRequest request) {
         try{
             ObjectMapper mapper = new ObjectMapper();
             String reqJson = mapper.writeValueAsString(request);
-            kafkaTemplate.send("ecommerce-product", reqJson);
+            kafkaTemplate.send(kafkaTopicConfig.productTopic().name(), reqJson);
 
             return true;
         }catch (Exception e){
